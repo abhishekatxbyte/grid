@@ -1,0 +1,60 @@
+{
+  "_from": "@syncfusion/ej2-progressbar@*",
+  "_id": "@syncfusion/ej2-progressbar@21.1.36",
+  "_inBundle": false,
+  "_integrity": "sha512-m+Gj/ZhllufWEHWaxZ6gbQbEwOhUAai9P7vVojHHGBbYGUaxJRwxlZL8RrGLgE1SfCEECjcX1I3X3vOP2GzNmg==",
+  "_location": "/@syncfusion/ej2-progressbar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@syncfusion/ej2-progressbar@*",
+    "name": "@syncfusion/ej2-progressbar",
+    "escapedName": "@syncfusion%2fej2-progressbar",
+    "scope": "@syncfusion",
+    "rawSpec": "*",
+    "saveSpec": null,
+    "fetchSpec": "*"
+  },
+  "_requiredBy": [
+    "/",
+    "/@syncfusion/ej2",
+    "/@syncfusion/ej2-angular-progressbar",
+    "/@syncfusion/ej2-react-progressbar",
+    "/@syncfusion/ej2-vue-progressbar"
+  ],
+  "_resolved": "https://nexus.syncfusion.com/repository/ej2-hotfix-new/@syncfusion/ej2-progressbar/-/ej2-progressbar-21.1.36.tgz",
+  "_shasum": "1ad62e168085f389e6175c984e02f23e161f5301",
+  "_spec": "@syncfusion/ej2-progressbar@*",
+  "_where": "/jenkins/workspace/elease-automation_release_21.1.1/packages/included",
+  "author": {
+    "name": "Syncfusion Inc."
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@syncfusion/ej2-base": "~22.2.5",
+    "@syncfusion/ej2-data": "~22.2.5",
+    "@syncfusion/ej2-svg-base": "~22.2.5"
+  },
+  "deprecated": false,
+  "description": "Essential JS 2 ProgressBar Component",
+  "devDependencies": {},
+  "es2015": "./dist/es6/ej2-progressbar.es5.js",
+  "keywords": [
+    "ej2",
+    "syncfusion",
+    "ej2-progressbar"
+  ],
+  "license": "SEE LICENSE IN license",
+  "main": "./dist/ej2-progressbar.umd.min.js",
+  "module": "./index.js",
+  "name": "@syncfusion/ej2-progressbar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syncfusion/ej2-javascript-ui-controls/tree/master/controls/progressbar"
+  },
+  "typings": "index.d.ts",
+  "version": "22.2.5",
+  "sideEffects": false,
+  "homepage": "https://www.syncfusion.com/javascript-ui-controls"
+}

@@ -1,0 +1,76 @@
+{
+  "_from": "@syncfusion/ej2-kanban@*",
+  "_id": "@syncfusion/ej2-kanban@22.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-9Pa/7Ay959IcOhw4etXIsUo6ap0I4IExYMMPHk8VFoyYRNlahd5EIoTp6dRrrbfD5QiSicBMTv9kPMwK3qzFtQ==",
+  "_location": "/@syncfusion/ej2-kanban",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@syncfusion/ej2-kanban@*",
+    "name": "@syncfusion/ej2-kanban",
+    "escapedName": "@syncfusion%2fej2-kanban",
+    "scope": "@syncfusion",
+    "rawSpec": "*",
+    "saveSpec": null,
+    "fetchSpec": "*"
+  },
+  "_requiredBy": [
+    "/",
+    "/@syncfusion/ej2",
+    "/@syncfusion/ej2-angular-kanban",
+    "/@syncfusion/ej2-react-kanban",
+    "/@syncfusion/ej2-vue-kanban"
+  ],
+  "_resolved": "https://nexus.syncfusion.com/repository/ej2-hotfix-new/@syncfusion/ej2-kanban/-/ej2-kanban-22.2.5.tgz",
+  "_shasum": "c56a56d403cf867d984549cabfc0a2309d91375a",
+  "_spec": "@syncfusion/ej2-kanban@*",
+  "_where": "/jenkins/workspace/elease-automation_release_21.1.1/packages/included",
+  "author": {
+    "name": "Syncfusion Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/syncfusion/ej2-javascript-ui-controls/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@syncfusion/ej2-base": "~22.2.9",
+    "@syncfusion/ej2-buttons": "~22.2.9",
+    "@syncfusion/ej2-data": "~22.2.5",
+    "@syncfusion/ej2-dropdowns": "~22.2.9",
+    "@syncfusion/ej2-inputs": "~22.2.9",
+    "@syncfusion/ej2-layouts": "~22.2.9",
+    "@syncfusion/ej2-navigations": "~22.2.8",
+    "@syncfusion/ej2-notifications": "~22.2.5",
+    "@syncfusion/ej2-popups": "~22.2.9"
+  },
+  "deprecated": false,
+  "description": "The Kanban board is an efficient way to visualize the workflow at each stage along its path to completion. The most important features available are Swim lane, filtering, and editing.",
+  "devDependencies": {},
+  "es2015": "./dist/es6/ej2-kanban.es5.js",
+  "homepage": "https://www.syncfusion.com/javascript-ui-controls",
+  "keywords": [
+    "ej2",
+    "syncfusion",
+    "kanban",
+    "javascript-kanban",
+    "Kanban-board",
+    "wip",
+    "swimlane",
+    "task-board",
+    "sprint-board",
+    "task-management"
+  ],
+  "license": "SEE LICENSE IN license",
+  "main": "./dist/ej2-kanban.umd.min.js",
+  "module": "./index.js",
+  "name": "@syncfusion/ej2-kanban",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syncfusion/ej2-javascript-ui-controls.git"
+  },
+  "typings": "index.d.ts",
+  "version": "22.2.9",
+  "sideEffects": false
+}

@@ -1,0 +1,1556 @@
+.e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 10px 0 0;
+}
+.e-bigger .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 12px 0 0;
+}
+.e-dropdownbase .e-list-item:not(.e-active).e-hover {
+  border: 2px solid #fff;
+}
+.e-dropdownbase .e-list-item:not(.e-active):not(.e-hover):not(.e-item-focus) {
+  border: 2px solid #000;
+}
+.e-dropdownbase .e-list-item.e-active {
+  border: 2px solid #ffd939;
+}
+.e-dropdownbase .e-list-item.e-item-focus {
+  border: 2px solid #685708;
+}
+
+.e-small .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 8px 0 0;
+}
+
+.e-bigger.e-small .e-dropdownbase .e-list-item .e-list-icon {
+  padding: 0 12px 0 0;
+}
+
+.e-bigger .e-ddl.e-popup .e-input-group .e-clear-icon {
+  height: 36px;
+}
+
+.e-popup.e-ddl .e-dropdownbase {
+  min-height: 26px;
+}
+
+.e-ddl.e-popup {
+  border: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  margin-top: 1px;
+}
+.e-ddl.e-popup .e-content.e-nodata {
+  background-color: #000;
+}
+.e-ddl.e-popup .e-dropdownbase .e-list-item .e-highlight {
+  color: #ffd939;
+}
+.e-ddl.e-popup .e-input-group {
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+.e-ddl.e-popup .e-input-group input {
+  line-height: 15px;
+}
+
+.e-ddl.e-popup .e-input-group .e-clear-icon {
+  border-radius: 20px;
+  height: 20px;
+  margin: 5px;
+  min-width: 20px;
+}
+.e-ddl.e-popup .e-input-group .e-clear-icon::before {
+  font-size: 10px;
+}
+.e-ddl.e-popup .e-filter-parent {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.e-ddl.e-popup .e-filter-parent .e-input-group.e-control-wrapper:hover:active {
+  border-color: #fff;
+}
+.e-bigger .e-ddl.e-popup.e-ddl-device.e-ddl-device-filter {
+  margin-top: 0;
+}
+.e-bigger .e-ddl.e-popup .e-list-item, .e-bigger .e-ddl.e-popup .e-list-group-item, .e-bigger .e-ddl.e-popup .e-fixed-head {
+  font-size: 15px;
+  line-height: 45px;
+  padding-left: 0;
+  text-indent: 16px;
+}
+.e-bigger .e-ddl.e-popup .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+.e-bigger .e-ddl.e-popup .e-input-group {
+  padding: 4px 0;
+}
+.e-bigger .e-ddl.e-popup .e-input-group input {
+  height: 46px;
+}
+.e-bigger.e-small .e-ddl.e-popup .e-list-item, .e-bigger.e-small .e-ddl.e-popup .e-list-group-item, .e-bigger.e-small .e-ddl.e-popup .e-fixed-head {
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 0;
+  text-indent: 16px;
+}
+.e-bigger.e-small .e-ddl.e-popup .e-dd-group .e-list-item {
+  padding-left: 4px;
+}
+.e-bigger.e-small .e-ddl.e-popup .e-input-group {
+  padding: 0;
+}
+.e-bigger.e-small .e-ddl.e-popup .e-input-group input {
+  height: 34px;
+}
+
+/*! component's theme wise override definitions and variables */ /*! Fabric theme definition's */
+/*! component's theme wise override definitions and variables */
+/*! Horizontal Tab */
+/*! HighContrast specific themes definition's */
+/*! Vertical Tab */
+.e-ribbon .e-drop-icon::before {
+  content: "\e966";
+}
+
+.e-ribbon.e-rbn {
+  display: block;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-toolbar {
+  min-height: auto;
+  display: inline-block;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll-content > .e-item:not(.e-active) {
+  display: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu {
+  position: absolute;
+  line-height: 22px;
+  padding: 8px 8px 10px;
+  border: 1px solid;
+  border-width: 0 0 1px 0;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu.e-active {
+  border-radius: unset;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu.e-active, .e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu:focus {
+  box-shadow: none;
+  outline: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-help-template {
+  position: absolute;
+  top: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 40px;
+  padding-right: 12px;
+  border-bottom: 1px solid;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header {
+  border-bottom: 1px solid;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-hor-nav {
+  height: 40px;
+  min-height: 40px;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header::before {
+  border-width: 0;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-indicator {
+  display: block;
+  z-index: 1;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-items {
+  min-height: auto;
+  height: 40px;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-items:not(.e-tbar-pos) .e-toolbar-item:first-child,
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-items:not(.e-tbar-pos) .e-toolbar-item:last-child {
+  margin: 0;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item {
+  vertical-align: unset;
+  margin: 0;
+  border: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item.e-active {
+  border: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item.e-active::before {
+  display: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item .e-tab-wrap {
+  padding: 0;
+  height: auto;
+  border: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item .e-tab-text {
+  padding: 8px 8px 10px;
+  line-height: 22px;
+  text-transform: none;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item .e-text-wrap {
+  height: auto;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item.e-active .e-text-wrap::before {
+  display: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item:not(.e-separator) {
+  height: auto;
+  min-height: auto;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll.e-scroll-device .e-scroll-nav.e-scroll-right-nav {
+  box-shadow: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll {
+  padding: 0;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav {
+  height: auto;
+  min-height: auto;
+  min-width: auto;
+  width: auto;
+  border-style: solid;
+  transform: none;
+  border-width: 1px;
+  border-radius: unset;
+  z-index: 3;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav.e-overlay {
+  display: none;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav .e-nav-arrow {
+  font-size: 16px;
+  height: auto;
+  transform: none;
+  line-height: 16px;
+  padding: 0 4px;
+  width: auto;
+  letter-spacing: unset;
+  font-weight: 400;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav .e-nav-arrow::before {
+  font-size: 16px;
+  line-height: 16px;
+}
+.e-ribbon.e-rbn .e-ribbon-tab.e-focused .e-tab-header .e-toolbar-item .e-tab-wrap:focus .e-text-wrap {
+  height: 40px;
+}
+.e-ribbon.e-rbn .e-content {
+  width: calc(100% - 25px);
+}
+.e-ribbon.e-rbn .e-ribbon-collapse-btn {
+  bottom: 0;
+  cursor: pointer;
+  position: absolute;
+  line-height: 16px;
+  padding: 4px;
+  border: 2px solid;
+}
+.e-ribbon.e-rbn .e-ribbon-collapse-btn:not(.e-ribbon-expand-btn) {
+  transform: rotate(180deg);
+}
+.e-ribbon.e-rbn.e-ribbon-overflow .e-content {
+  width: calc(100% - 25px - 40px);
+}
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-overall-of-btn {
+  cursor: pointer;
+  border-radius: unset;
+  padding: 0;
+  border: 2px solid;
+  height: 40px;
+  margin: auto;
+  box-shadow: none;
+}
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn .e-btn-icon,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-overall-of-btn .e-btn-icon {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 10px;
+  margin: 0;
+  width: auto;
+}
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:focus,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-overall-of-btn:focus {
+  outline: none;
+}
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-overall-of-btn {
+  bottom: 0;
+  position: absolute;
+}
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-container {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-overall-of-btn.e-ribbon-hide {
+  display: none;
+}
+.e-ribbon.e-rbn.e-ribbon-minimize .e-ribbon-tab .e-content, .e-ribbon.e-rbn.e-ribbon-minimize .e-ribbon-collapse-btn, .e-ribbon.e-rbn.e-ribbon-minimize .e-ribbon-overall-of-btn {
+  display: none;
+}
+.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-tab .e-hscroll-bar {
+  overflow-y: hidden;
+}
+.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-input-group {
+  margin-bottom: 0;
+}
+.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group {
+  padding-top: 5px;
+  height: auto;
+}
+.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group.e-ribbon-emptyCollection::after {
+  display: none;
+}
+.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group.e-ribbon-emptyCollection .e-ribbon-group-container {
+  padding: 0;
+}
+.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-launcher-icon {
+  display: none;
+}
+.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group-container {
+  padding: 0 8px;
+}
+.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group-content {
+  padding: 0;
+  height: 40px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.e-ribbon.e-rbn .e-ribbon-tab-item {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.e-ribbon.e-rbn .e-ribbon-group {
+  position: relative;
+  padding-top: 6px;
+  height: 147px;
+}
+.e-ribbon.e-rbn .e-ribbon-group::after {
+  border-right: 1px solid;
+  content: "";
+  height: calc(100% - 16px);
+  position: absolute;
+  top: 8px;
+}
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-collapse-btn,
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-help-template,
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-group::after {
+  right: 0;
+}
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-overall-of-btn {
+  right: 25px;
+}
+.e-ribbon.e-rbn:not(.e-rtl) .e-tab-header {
+  left: var(--fileMenuWidth);
+}
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-tab .e-hscroll.e-scroll-device {
+  padding-right: 30px;
+}
+.e-ribbon.e-rbn.e-rtl .e-ribbon-collapse-btn,
+.e-ribbon.e-rbn.e-rtl .e-ribbon-help-template,
+.e-ribbon.e-rbn.e-rtl .e-ribbon-group::after {
+  left: 0;
+}
+.e-ribbon.e-rbn.e-rtl .e-ribbon-overall-of-btn {
+  left: 25px;
+}
+.e-ribbon.e-rbn.e-rtl .e-tab-header {
+  right: var(--fileMenuWidth);
+}
+.e-ribbon.e-rbn.e-rtl .e-ribbon-tab .e-hscroll.e-scroll-device {
+  padding-left: 30px;
+}
+
+.e-ribbon.e-rbn,
+.e-ribbon-group-overflow-ddb {
+  border: 1px solid;
+}
+.e-ribbon.e-rbn .e-input-group,
+.e-ribbon-group-overflow-ddb .e-input-group {
+  height: 36px;
+  border-radius: unset;
+  margin-bottom: 4px;
+}
+.e-ribbon.e-rbn .e-input-group input.e-input,
+.e-ribbon-group-overflow-ddb .e-input-group input.e-input {
+  padding: 7px 0 7px 12px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  height: auto;
+  min-height: auto;
+}
+.e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-input-group-icon,
+.e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-input-group-icon {
+  font-size: 12px;
+  line-height: 12px;
+  height: auto;
+  padding: 12px 4px 12px 2px;
+  margin: 0;
+  font-weight: 400;
+  border: none;
+  min-width: auto;
+  min-height: auto;
+  border-radius: unset;
+}
+.e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-input-group-icon.e-ddl-icon,
+.e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-input-group-icon.e-ddl-icon {
+  font-size: 12px;
+}
+.e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-clear-icon,
+.e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-clear-icon {
+  min-width: auto;
+  min-height: auto;
+  border-radius: unset;
+}
+.e-ribbon.e-rbn .e-input-group .e-clear-icon,
+.e-ribbon-group-overflow-ddb .e-input-group .e-clear-icon {
+  min-width: auto;
+}
+.e-ribbon.e-rbn .e-ribbon-group-content,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-content {
+  padding: 0 8px;
+}
+.e-ribbon.e-rbn .e-ribbon-content-height,
+.e-ribbon-group-overflow-ddb .e-ribbon-content-height {
+  height: 120px;
+}
+.e-ribbon.e-rbn .e-ribbon-group-header,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-header {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  white-space: nowrap;
+  padding: 3px 11px 0;
+  line-height: 18px;
+  font-size: 12px;
+}
+.e-ribbon.e-rbn .e-ribbon-launcher-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-launcher-icon {
+  position: absolute;
+  bottom: 0;
+  margin: 0 8px 2px 0;
+  cursor: pointer;
+  border: 2px solid;
+}
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-launcher .e-ribbon-group-header,
+.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-launcher .e-ribbon-group-header {
+  margin-right: 18px;
+}
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-launcher .e-ribbon-launcher-icon,
+.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-launcher .e-ribbon-launcher-icon {
+  right: 0;
+}
+.e-ribbon.e-rbn.e-rtl .e-ribbon-launcher .e-ribbon-group-header,
+.e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-launcher .e-ribbon-group-header {
+  margin-left: 18px;
+}
+.e-ribbon.e-rbn.e-rtl .e-ribbon-launcher .e-ribbon-launcher-icon,
+.e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-launcher .e-ribbon-launcher-icon {
+  left: 0;
+  margin: 0 0 2px 8px;
+}
+.e-ribbon.e-rbn .e-ribbon-column,
+.e-ribbon-group-overflow-ddb .e-ribbon-column {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+.e-ribbon.e-rbn .e-ribbon-row,
+.e-ribbon-group-overflow-ddb .e-ribbon-row {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow,
+.e-ribbon.e-rbn .e-ribbon-item,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow,
+.e-ribbon-group-overflow-ddb .e-ribbon-item {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1px;
+  vertical-align: middle;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn,
+.e-ribbon.e-rbn .e-ribbon-item .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn {
+  border: 2px solid;
+  border-radius: unset;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  box-shadow: none;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:focus,
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:focus,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:focus,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:focus {
+  outline: none;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-btn,
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-btn {
+  max-width: 10ch;
+  min-height: inherit;
+  min-width: fit-content;
+  white-space: normal;
+  padding: 0 5px;
+  line-height: 22px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-btn.e-ribbon-group-overflow-ddb,
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-btn.e-ribbon-group-overflow-ddb,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-btn.e-ribbon-group-overflow-ddb,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-btn.e-ribbon-group-overflow-ddb {
+  max-width: 100%;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret) {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 12px 10px 4px;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-btn .e-icon-top,
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-btn .e-icon-top,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-btn .e-icon-top,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-btn .e-icon-top {
+  height: 50%;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item > .e-split-btn-wrapper.e-vertical .e-btn,
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item > .e-split-btn-wrapper.e-vertical .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item > .e-split-btn-wrapper.e-vertical .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item > .e-split-btn-wrapper.e-vertical .e-btn {
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  height: 50%;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-dropdown-btn .e-caret {
+  font-size: 12px;
+  padding: 0 20px;
+  line-height: 12px;
+}
+.e-ribbon.e-rbn .e-ribbon-group-overflow,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow {
+  height: 120px;
+  padding: 2px 8px;
+}
+.e-ribbon.e-rbn .e-ribbon-item,
+.e-ribbon-group-overflow-ddb .e-ribbon-item {
+  min-height: 33%;
+  padding: 2px;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-checkbox-wrapper,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-checkbox-wrapper {
+  padding: 0 10px;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-checkbox-wrapper .e-label,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-checkbox-wrapper .e-label {
+  font-size: 14px;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn {
+  box-shadow: none;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:disabled,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:disabled {
+  pointer-events: none;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-checkbox-wrapper,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-checkbox-wrapper {
+  height: fit-content;
+  margin: auto 0;
+  width: max-content;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-colorpicker-wrapper,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-colorpicker-wrapper {
+  border: 1px solid transparent;
+  border-radius: unset;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-colorpicker-wrapper .e-split-btn-wrapper.e-rtl .e-split-colorpicker.e-split-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-colorpicker-wrapper .e-split-btn-wrapper.e-rtl .e-split-colorpicker.e-split-btn {
+  padding: 0;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-split-btn-wrapper,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-btn-wrapper {
+  border: 1px solid transparent;
+  border-radius: unset;
+  box-shadow: none;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-split-btn-wrapper .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-btn-wrapper .e-btn {
+  border-radius: 0;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-split-btn-wrapper .e-dropdown-btn .e-caret,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-btn-wrapper .e-dropdown-btn .e-caret {
+  font-size: 12px;
+  padding: 0 20px;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item {
+  min-height: 100%;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-split-btn-wrapper.e-vertical,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-split-btn-wrapper.e-vertical {
+  height: 100%;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-split-btn-wrapper.e-vertical .e-dropdown-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-split-btn-wrapper.e-vertical .e-dropdown-btn {
+  margin: auto;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-btn, .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn {
+  white-space: nowrap;
+  padding: 0;
+  line-height: 22px;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-btn .e-btn-icon, .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-btn .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon {
+  font-size: 16px;
+  line-height: 16px;
+  margin: 10px;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-colorpicker-wrapper .e-split-btn-wrapper, .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-colorpicker-wrapper .e-split-btn-wrapper,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-colorpicker-wrapper .e-split-btn-wrapper,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-colorpicker-wrapper .e-split-btn-wrapper {
+  border: none;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon, .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon {
+  height: 16px;
+  width: 16px;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-split-preview, .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-split-preview,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-split-preview,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-split-preview {
+  border-radius: unset;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-dropdown-btn .e-caret, .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-dropdown-btn .e-caret,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-dropdown-btn .e-caret,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-dropdown-btn .e-caret {
+  font-size: 12px;
+  padding: 2px 4px;
+  line-height: 12px;
+  margin: 0;
+  width: auto;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-split-btn-wrapper .e-btn, .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-split-btn-wrapper .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-split-btn-wrapper .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-split-btn-wrapper .e-btn {
+  margin: 0;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon.e-icon-left,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon.e-icon-left {
+  width: auto;
+}
+.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn.e-dropdown-btn:not(.e-icon-btn) .e-caret,
+.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn.e-dropdown-btn:not(.e-icon-btn) .e-caret {
+  margin: 10px;
+  padding: 0;
+}
+.e-ribbon.e-rbn .e-ribbon-vertical-center:not(.e-ribbon-large-item),
+.e-ribbon-group-overflow-ddb .e-ribbon-vertical-center:not(.e-ribbon-large-item) {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-item.e-ribbon-small-item .e-btn:not(.e-icon-btn, .e-dropdown-btn), .e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-item.e-ribbon-medium-item .e-btn:not(.e-icon-btn, .e-dropdown-btn),
+.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-item.e-ribbon-small-item .e-btn:not(.e-icon-btn, .e-dropdown-btn),
+.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-item.e-ribbon-medium-item .e-btn:not(.e-icon-btn, .e-dropdown-btn) {
+  padding: 0 4px 0 0;
+}
+.e-ribbon.e-rbn:not(.e-rtl) .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon.e-icon-left,
+.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon.e-icon-left {
+  padding: 0 2px 0 0;
+}
+.e-ribbon.e-rbn.e-rtl .e-ribbon-item.e-ribbon-small-item .e-btn:not(.e-icon-btn, .e-dropdown-btn), .e-ribbon.e-rbn.e-rtl .e-ribbon-item.e-ribbon-medium-item .e-btn:not(.e-icon-btn, .e-dropdown-btn),
+.e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-item.e-ribbon-small-item .e-btn:not(.e-icon-btn, .e-dropdown-btn),
+.e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-item.e-ribbon-medium-item .e-btn:not(.e-icon-btn, .e-dropdown-btn) {
+  padding: 0 0 0 4px;
+}
+.e-ribbon.e-rbn.e-rtl .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon.e-icon-left,
+.e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon.e-icon-left {
+  padding: 0 0 0 2px;
+}
+
+.e-ribbon-group-overflow-ddb .e-ribbon-of-tab:not(.e-ribbon-active) {
+  display: none;
+}
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item > .e-input-group,
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item .e-ribbon-template {
+  margin: 7px 10px;
+}
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item > .e-checkbox-wrapper {
+  margin: 10px;
+  padding: 0;
+}
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item.e-ribbon-medium-item {
+  padding: 0;
+  width: 100%;
+}
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item.e-ribbon-medium-item > .e-split-btn-wrapper .e-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item.e-ribbon-medium-item > .e-btn {
+  line-height: 22px;
+  overflow: hidden;
+}
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item.e-ribbon-medium-item > .e-split-btn-wrapper {
+  width: inherit;
+}
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item.e-ribbon-medium-item > .e-split-btn-wrapper .e-split-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item.e-ribbon-medium-item > .e-btn {
+  width: 100%;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-overflow-header {
+  padding: 6px 10px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-overflow-target .e-ribbon-item > .e-split-btn-wrapper .e-icons.e-caret,
+.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-overflow-target .e-ribbon-item > .e-dropdown-btn .e-icons.e-caret {
+  transform: rotate(-90deg);
+  padding: 10px;
+  margin: 0 0 0 auto;
+}
+
+.e-rtl.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item > .e-split-btn-wrapper .e-icons.e-caret,
+.e-rtl.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item > .e-dropdown-btn .e-icons.e-caret {
+  transform: rotate(90deg);
+  padding: 10px;
+  margin: 0 auto 0 0;
+}
+
+.e-ribbon-menu {
+  display: block;
+}
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical.e-menu, .e-ribbon-menu.e-menu-wrapper ul.e-ul.e-menu {
+  border: 1px solid;
+  border-radius: unset;
+}
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item, .e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item {
+  border-radius: unset;
+}
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item .e-menu-icon, .e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item .e-menu-icon {
+  width: auto;
+}
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item.e-blankicon, .e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item.e-blankicon {
+  padding-left: 30px !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.e-ribbon-control.e-dropdown-popup ul .e-item {
+  font-size: 16px;
+  height: 36px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.e-ribbon-control.e-dropdown-popup ul .e-item .e-menu-icon {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.e-ribbon-tooltip .e-tip-content {
+  padding: 4px;
+}
+.e-ribbon-tooltip .e-tip-content .e-ribbon-tooltip-title {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 4px 4px 0;
+}
+.e-ribbon-tooltip .e-tip-content .e-ribbon-text-container {
+  padding: 4px;
+  display: -ms-flexbox;
+  display: flex;
+}
+.e-ribbon-tooltip .e-tip-content .e-ribbon-text-container .e-ribbon-tooltip-content {
+  font-size: 10px;
+  line-height: 15px;
+}
+.e-ribbon-tooltip .e-tip-content .e-ribbon-text-container .e-ribbon-tooltip-icon {
+  font-size: 32px;
+  line-height: 32px;
+  padding-right: 8px;
+}
+
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group {
+  height: 170px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu {
+  line-height: 24px;
+  padding: 13px 8px;
+  font-size: 16px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-help-template,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-help-template {
+  padding-right: 16px;
+  height: 50px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab .e-hscroll {
+  min-height: auto;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-hor-nav,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-hor-nav {
+  height: 50px;
+  min-height: 50px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-items,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-items {
+  height: 50px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item {
+  margin-right: 0;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item .e-tab-text,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item .e-tab-text {
+  font-size: 16px;
+  padding: 13px 8px;
+  line-height: 24px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-tab.e-focused .e-tab-header .e-toolbar-item .e-tab-wrap:focus, .e-bigger.e-ribbon.e-rbn .e-ribbon-tab.e-focused .e-tab-header .e-toolbar-item .e-tab-wrap:focus .e-text-wrap,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab.e-focused .e-tab-header .e-toolbar-item .e-tab-wrap:focus,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-tab.e-focused .e-tab-header .e-toolbar-item .e-tab-wrap:focus .e-text-wrap {
+  height: 50px;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible .e-content,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible .e-content {
+  width: calc(100% - 28px);
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible .e-ribbon-collapse-btn,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible .e-ribbon-collapse-btn {
+  line-height: 16px;
+  font-size: 16px;
+  padding: 4px;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-content,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-content {
+  width: calc(100% - 28px - 40px);
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-group-of-btn,
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-overall-of-btn,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-group-of-btn,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-overall-of-btn {
+  height: 44px;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-group-of-btn .e-btn-icon,
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-overall-of-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-group-of-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-overall-of-btn .e-btn-icon {
+  font-size: 20px;
+  padding: 12px;
+  line-height: 20px;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-overall-of-btn,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow .e-ribbon-overall-of-btn {
+  bottom: 3px;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow:not(.e-rtl) .e-ribbon-overall-of-btn,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow:not(.e-rtl) .e-ribbon-overall-of-btn {
+  right: 28px;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow.e-rtl .e-ribbon-overall-of-btn,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-collapsible.e-ribbon-overflow.e-rtl .e-ribbon-overall-of-btn {
+  left: 28px;
+}
+
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-header,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-header,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-header,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-header {
+  padding: 8px 11px 6px;
+  line-height: 18px;
+  font-size: 12px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-launcher-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-launcher-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-launcher-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-launcher-icon {
+  margin: 0 8px 8px 0;
+}
+.e-bigger.e-ribbon.e-rbn.e-rtl .e-ribbon-launcher-icon,
+.e-bigger .e-ribbon.e-rbn.e-rtl .e-ribbon-launcher-icon,
+.e-bigger .e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-launcher-icon,
+.e-bigger.e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-launcher-icon {
+  margin: 0 0 8px 8px;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group,
+.e-bigger .e-ribbon-group-overflow-ddb.e-ribbon-simplified-mode .e-ribbon-group,
+.e-bigger.e-ribbon-group-overflow-ddb.e-ribbon-simplified-mode .e-ribbon-group {
+  height: auto;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-input-group,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-simplified-mode .e-input-group,
+.e-bigger .e-ribbon-group-overflow-ddb.e-ribbon-simplified-mode .e-input-group,
+.e-bigger.e-ribbon-group-overflow-ddb.e-ribbon-simplified-mode .e-input-group {
+  margin-bottom: 0;
+}
+.e-bigger.e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group-content,
+.e-bigger .e-ribbon.e-rbn.e-ribbon-simplified-mode .e-ribbon-group-content,
+.e-bigger .e-ribbon-group-overflow-ddb.e-ribbon-simplified-mode .e-ribbon-group-content,
+.e-bigger.e-ribbon-group-overflow-ddb.e-ribbon-simplified-mode .e-ribbon-group-content {
+  height: 50px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-content-height,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-content-height,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-content-height,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-content-height {
+  height: 132px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow {
+  height: 132px;
+}
+.e-bigger.e-ribbon.e-rbn .e-input-group,
+.e-bigger .e-ribbon.e-rbn .e-input-group,
+.e-bigger .e-ribbon-group-overflow-ddb .e-input-group,
+.e-bigger.e-ribbon-group-overflow-ddb .e-input-group {
+  height: 40px;
+  margin-bottom: 4px;
+}
+.e-bigger.e-ribbon.e-rbn .e-input-group:not(.e-float-input) .e-input,
+.e-bigger .e-ribbon.e-rbn .e-input-group:not(.e-float-input) .e-input,
+.e-bigger .e-ribbon-group-overflow-ddb .e-input-group:not(.e-float-input) .e-input,
+.e-bigger.e-ribbon-group-overflow-ddb .e-input-group:not(.e-float-input) .e-input {
+  min-height: auto;
+}
+.e-bigger.e-ribbon.e-rbn .e-input-group input.e-input,
+.e-bigger .e-ribbon.e-rbn .e-input-group input.e-input,
+.e-bigger .e-ribbon-group-overflow-ddb .e-input-group input.e-input,
+.e-bigger.e-ribbon-group-overflow-ddb .e-input-group input.e-input {
+  padding: 9px 0 9px 12px;
+  font-size: 14px;
+  line-height: 22px;
+  height: auto;
+}
+.e-bigger.e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-input-group-icon,
+.e-bigger .e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-input-group-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-input-group-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-input-group-icon {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 14px 4px 14px 2px;
+}
+.e-bigger.e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-input-group-icon.e-ddl-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-input-group-icon.e-ddl-icon {
+  font-size: 12px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item {
+  padding: 2px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item .e-checkbox-wrapper,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item .e-checkbox-wrapper,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item .e-checkbox-wrapper,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item .e-checkbox-wrapper {
+  padding: 0 10px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item .e-checkbox-wrapper .e-label,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item .e-checkbox-wrapper .e-label,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item .e-checkbox-wrapper .e-label,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item .e-checkbox-wrapper .e-label {
+  font-size: 16px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-btn,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-btn {
+  padding: 0 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret),
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-btn .e-btn-icon:not(.e-caret) {
+  font-size: 36px;
+  padding: 12px 8px 0;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-large-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-large-item .e-dropdown-btn .e-caret {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 18px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow .e-split-btn-wrapper .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item .e-split-btn-wrapper .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow .e-split-btn-wrapper .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item .e-split-btn-wrapper .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-split-btn-wrapper .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-btn-wrapper .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-split-btn-wrapper .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-btn-wrapper .e-dropdown-btn .e-caret {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 18px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-btn, .e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-btn,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-btn {
+  font-size: 14px;
+  line-height: 22px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-btn .e-btn-icon, .e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-btn .e-btn-icon,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-btn .e-btn-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-btn .e-btn-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-btn .e-btn-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-btn .e-btn-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-btn .e-btn-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-btn .e-btn-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-btn .e-btn-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-btn .e-btn-icon {
+  font-size: 20px;
+  margin: 10px;
+  line-height: 20px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-split-colorpicker.e-split-btn, .e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-split-colorpicker.e-split-btn,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-split-colorpicker.e-split-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-split-colorpicker.e-split-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn {
+  padding: 0;
+  border: none;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon, .e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-split-colorpicker.e-split-btn .e-btn-icon,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-split-colorpicker.e-split-btn .e-btn-icon {
+  height: 20px;
+  width: 20px;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-dropdown-btn .e-caret, .e-bigger.e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-medium-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-group-overflow.e-ribbon-small-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-medium-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item.e-ribbon-small-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-dropdown-btn .e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-medium-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow.e-ribbon-small-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-medium-item .e-dropdown-btn .e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item.e-ribbon-small-item .e-dropdown-btn .e-caret {
+  font-size: 16px;
+  padding: 3px 5px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item > .e-input-group,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item .e-ribbon-template,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item > .e-input-group,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item .e-ribbon-template {
+  margin: 7px 10px;
+}
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item > .e-checkbox-wrapper,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-item > .e-checkbox-wrapper {
+  margin: 10px;
+  padding: 0;
+}
+.e-bigger .e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-overflow-target .e-ribbon-item > .e-split-btn-wrapper .e-icons.e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-overflow-target .e-ribbon-item > .e-dropdown-btn .e-icons.e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-overflow-target .e-ribbon-item > .e-split-btn-wrapper .e-icons.e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb:not(.e-rtl) .e-ribbon-overflow-target .e-ribbon-item > .e-dropdown-btn .e-icons.e-caret {
+  padding: 10px;
+}
+.e-bigger .e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-overflow-target .e-ribbon-item > .e-split-btn-wrapper .e-icons.e-caret,
+.e-bigger .e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-overflow-target .e-ribbon-item > .e-dropdown-btn .e-icons.e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-overflow-target .e-ribbon-item > .e-split-btn-wrapper .e-icons.e-caret,
+.e-bigger.e-ribbon-group-overflow-ddb.e-rtl .e-ribbon-overflow-target .e-ribbon-item > .e-dropdown-btn .e-icons.e-caret {
+  padding: 10px;
+}
+
+.e-bigger .e-ribbon-control.e-dropdown-popup ul .e-item {
+  font-size: 16px;
+  height: 45px;
+}
+.e-bigger .e-ribbon-control.e-dropdown-popup ul .e-item .e-menu-icon {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.e-bigger .e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item.e-blankicon,
+.e-bigger.e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item.e-blankicon,
+.e-bigger .e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item.e-blankicon,
+.e-bigger.e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item.e-blankicon {
+  padding-left: 36px !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header {
+  border-color: #969696;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item .e-tab-wrap .e-tab-text {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item .e-tab-wrap:hover .e-tab-text {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-toolbar-item.e-active .e-tab-wrap .e-tab-text {
+  color: #ffd939;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-tab-header .e-indicator {
+  background: #ffd939;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav {
+  border-color: #757575;
+  background: #000;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav .e-nav-arrow {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav:hover {
+  border-color: #fff;
+  background: #685708;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav:hover .e-nav-arrow {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav:active {
+  border-color: unset;
+  background: #685708;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav:active .e-nav-arrow {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav:focus {
+  border-color: #fff;
+  background: #000;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-hscroll .e-scroll-nav:focus .e-nav-arrow {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu {
+  color: #fff;
+  background: #000;
+  border-color: #969696;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu.e-active {
+  color: #000;
+  background: #ffd939;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu:hover:not(.e-active) {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-file-menu:focus-visible {
+  color: #ffd939;
+}
+.e-ribbon.e-rbn .e-ribbon-tab .e-ribbon-help-template {
+  border-color: #969696;
+}
+.e-ribbon.e-rbn .e-ribbon-tab.e-focused .e-tab-header .e-tab-wrap:focus .e-tab-text {
+  color: #ffd939;
+}
+.e-ribbon.e-rbn .e-ribbon-collapse-btn {
+  color: #fff;
+  background: #000;
+  border-color: transparent;
+}
+.e-ribbon.e-rbn .e-ribbon-collapse-btn:hover, .e-ribbon.e-rbn .e-ribbon-collapse-btn:focus-visible {
+  background: unset;
+  color: #fff;
+  border-color: #fff;
+}
+
+.e-ribbon.e-rbn,
+.e-ribbon-group-overflow-ddb {
+  background: #000;
+  border-color: #969696;
+}
+.e-ribbon.e-rbn .e-ribbon-item:not(.e-disabled) .e-checkbox-wrapper .e-label,
+.e-ribbon-group-overflow-ddb .e-ribbon-item:not(.e-disabled) .e-checkbox-wrapper .e-label {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-item:not(.e-disabled) .e-checkbox-wrapper.e-checkbox-disabled .e-label,
+.e-ribbon-group-overflow-ddb .e-ribbon-item:not(.e-disabled) .e-checkbox-wrapper.e-checkbox-disabled .e-label {
+  color: #969696;
+}
+.e-ribbon.e-rbn .e-ribbon-item:not(.e-disabled) .e-colorpicker-wrapper.e-ribbon-hover, .e-ribbon.e-rbn .e-ribbon-item:not(.e-disabled) .e-colorpicker-wrapper.e-ribbon-open,
+.e-ribbon-group-overflow-ddb .e-ribbon-item:not(.e-disabled) .e-colorpicker-wrapper.e-ribbon-hover,
+.e-ribbon-group-overflow-ddb .e-ribbon-item:not(.e-disabled) .e-colorpicker-wrapper.e-ribbon-open {
+  border-color: #685708;
+}
+.e-ribbon.e-rbn .e-ribbon-item:not(.e-disabled) .e-split-btn-wrapper.e-ribbon-hover, .e-ribbon.e-rbn .e-ribbon-item:not(.e-disabled) .e-split-btn-wrapper.e-ribbon-open,
+.e-ribbon-group-overflow-ddb .e-ribbon-item:not(.e-disabled) .e-split-btn-wrapper.e-ribbon-hover,
+.e-ribbon-group-overflow-ddb .e-ribbon-item:not(.e-disabled) .e-split-btn-wrapper.e-ribbon-open {
+  border-color: #685708;
+}
+.e-ribbon.e-rbn .e-ribbon-item:not(.e-disabled) .e-split-btn-wrapper.e-vertical:hover .e-split-btn:not(:hover),
+.e-ribbon-group-overflow-ddb .e-ribbon-item:not(.e-disabled) .e-split-btn-wrapper.e-vertical:hover .e-split-btn:not(:hover) {
+  border-color: transparent;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-split-btn-wrapper.e-vertical:hover .e-split-btn:disabled,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-btn-wrapper.e-vertical:hover .e-split-btn:disabled {
+  border-color: transparent;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu),
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu),
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu),
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu),
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu),
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu),
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn {
+  color: #fff;
+  background: #000;
+  border-color: transparent;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu) .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu) .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn .e-btn-icon, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu) .e-btn-icon,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu) .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu) .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu) .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn .e-btn-icon {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):hover,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn:hover,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):hover,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn:hover, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):hover,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:hover,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):hover,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn:hover,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):hover,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn:hover,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):hover,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn:hover {
+  background: #685708;
+  color: #fff;
+  border-color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):hover .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn:hover .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):hover .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn:hover .e-btn-icon, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):hover .e-btn-icon,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:hover .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):hover .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn:hover .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):hover .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn:hover .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):hover .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn:hover .e-btn-icon {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu).e-active, .e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):active,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn.e-active,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn:active,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu).e-active,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):active,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn.e-active,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn:active, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu).e-active, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):active,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn.e-active,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:active,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu).e-active,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):active,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn.e-active,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn:active,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu).e-active,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):active,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn.e-active,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn:active,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu).e-active,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):active,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn.e-active,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn:active {
+  background: #685708;
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu).e-active .e-btn-icon, .e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):active .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn.e-active .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn:active .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu).e-active .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):active .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn.e-active .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn:active .e-btn-icon, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu).e-active .e-btn-icon, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):active .e-btn-icon,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn.e-active .e-btn-icon,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:active .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu).e-active .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):active .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn.e-active .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn:active .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu).e-active .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):active .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn.e-active .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn:active .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu).e-active .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):active .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn.e-active .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn:active .e-btn-icon {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):focus-visible,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn:focus-visible,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):focus-visible,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn:focus-visible, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):focus-visible,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:focus-visible,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):focus-visible,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn:focus-visible,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):focus-visible,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn:focus-visible,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):focus-visible,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn:focus-visible {
+  background: unset;
+  color: #fff;
+  border-color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):focus-visible .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn:focus-visible .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):focus-visible .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn:focus-visible .e-btn-icon, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):focus-visible .e-btn-icon,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:focus-visible .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):focus-visible .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn:focus-visible .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):focus-visible .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn:focus-visible .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):focus-visible .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn:focus-visible .e-btn-icon {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):disabled,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn:disabled,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):disabled,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn:disabled, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):disabled,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:disabled,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):disabled,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn:disabled,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):disabled,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn:disabled,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):disabled,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn:disabled {
+  color: #969696;
+}
+.e-ribbon.e-rbn .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):disabled .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-item .e-ribbon-group-of-btn:disabled .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):disabled .e-btn-icon,
+.e-ribbon.e-rbn .e-ribbon-group-overflow .e-ribbon-group-of-btn:disabled .e-btn-icon, .e-ribbon.e-rbn.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):disabled .e-btn-icon,
+.e-ribbon.e-rbn.e-ribbon-overflow .e-ribbon-group-of-btn:disabled .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-btn:not(.e-ribbon-file-menu):disabled .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-item .e-ribbon-group-of-btn:disabled .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-btn:not(.e-ribbon-file-menu):disabled .e-btn-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-overflow .e-ribbon-group-of-btn:disabled .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-btn:not(.e-ribbon-file-menu):disabled .e-btn-icon,
+.e-ribbon-group-overflow-ddb.e-ribbon-overflow .e-ribbon-group-of-btn:disabled .e-btn-icon {
+  color: #969696;
+}
+.e-ribbon.e-rbn .e-ribbon-group-header,
+.e-ribbon-group-overflow-ddb .e-ribbon-group-header {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-ribbon-launcher-icon,
+.e-ribbon-group-overflow-ddb .e-ribbon-launcher-icon {
+  border-color: transparent;
+}
+.e-ribbon.e-rbn .e-ribbon-launcher-icon:hover, .e-ribbon.e-rbn .e-ribbon-launcher-icon:focus-visible,
+.e-ribbon-group-overflow-ddb .e-ribbon-launcher-icon:hover,
+.e-ribbon-group-overflow-ddb .e-ribbon-launcher-icon:focus-visible {
+  background: unset;
+  color: #fff;
+  border-color: #fff;
+}
+.e-ribbon.e-rbn .e-input-group,
+.e-ribbon-group-overflow-ddb .e-input-group {
+  border-color: #969696;
+  background: #000;
+}
+.e-ribbon.e-rbn .e-input-group input.e-input,
+.e-ribbon-group-overflow-ddb .e-input-group input.e-input {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-input-group-icon,
+.e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-input-group-icon {
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-input-group.e-control-wrapper .e-input-group-icon:hover,
+.e-ribbon-group-overflow-ddb .e-input-group.e-control-wrapper .e-input-group-icon:hover {
+  background: #685708;
+  color: #fff;
+}
+.e-ribbon.e-rbn .e-input-group.e-disabled, .e-ribbon.e-rbn .e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left).e-disabled,
+.e-ribbon-group-overflow-ddb .e-input-group.e-disabled,
+.e-ribbon-group-overflow-ddb .e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left).e-disabled {
+  border-color: #969696;
+}
+.e-ribbon.e-rbn .e-ribbon-group::after,
+.e-ribbon-group-overflow-ddb .e-ribbon-group::after {
+  border-color: #757575;
+}
+
+.e-ribbon-group-overflow-ddb.e-dropdown-popup {
+  background: #000;
+  border-color: #969696;
+}
+.e-ribbon-group-overflow-ddb .e-ribbon-overflow-target .e-ribbon-of-tab {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn {
+  background: #000;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn:hover,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn:hover,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn:hover,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn:hover {
+  background: #685708;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn.e-active, .e-bigger.e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn:active,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn.e-active,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn:active,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn.e-active,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn:active,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn.e-active,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn:active {
+  background: #685708;
+}
+.e-bigger.e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn:focus,
+.e-bigger .e-ribbon.e-rbn .e-ribbon-item .e-split-colorpicker.e-split-btn:focus,
+.e-bigger .e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn:focus,
+.e-bigger.e-ribbon-group-overflow-ddb .e-ribbon-item .e-split-colorpicker.e-split-btn:focus {
+  background: unset;
+}
+
+.e-bigger .e-ribbon-group-overflow-ddb.e-dropdown-popup {
+  background: #000;
+  border-color: #969696;
+}
+
+.e-ribbon-tooltip.e-tooltip-wrap.e-popup {
+  background: #000;
+}
+.e-ribbon-tooltip.e-tooltip-wrap .e-tip-content {
+  color: #fff;
+}
+.e-ribbon-tooltip.e-tooltip-wrap .e-arrow-tip .e-arrow-tip-inner.e-tip-top {
+  color: #000;
+}
+
+.e-ribbon-menu.e-menu-wrapper:not(.e-menu-popup), .e-ribbon-menu.e-menu-container:not(.e-menu-popup) {
+  background: #000;
+}
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical.e-menu, .e-ribbon-menu.e-menu-wrapper ul.e-ul.e-menu {
+  border-color: #969696;
+  background: #000;
+}
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item, .e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item {
+  color: #fff;
+}
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item .e-menu-icon,
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item .e-caret, .e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item .e-menu-icon,
+.e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item .e-caret {
+  color: #fff;
+}
+.e-ribbon-menu.e-menu-wrapper ul.e-vertical .e-menu-item.e-focused, .e-ribbon-menu.e-menu-wrapper ul.e-ul .e-menu-item.e-focused {
+  background: #685708;
+  color: #fff;
+}

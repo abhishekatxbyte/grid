@@ -1,0 +1,85 @@
+{
+  "_from": "@syncfusion/ej2-circulargauge@*",
+  "_id": "@syncfusion/ej2-circulargauge@16.41.8",
+  "_inBundle": false,
+  "_integrity": "sha512-lebIe76qXrarLm9Ppj5Lvyj4pk8LP4I5L/QdtBOow83/DSmpn7asVCdfZU/VcQKb/rKBkIc3zvpY/vBgpQnOoA==",
+  "_location": "/@syncfusion/ej2-circulargauge",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@syncfusion/ej2-circulargauge@*",
+    "name": "@syncfusion/ej2-circulargauge",
+    "escapedName": "@syncfusion%2fej2-circulargauge",
+    "scope": "@syncfusion",
+    "rawSpec": "*",
+    "saveSpec": null,
+    "fetchSpec": "*"
+  },
+  "_requiredBy": [
+    "/",
+    "/@syncfusion/ej2",
+    "/@syncfusion/ej2-angular-circulargauge",
+    "/@syncfusion/ej2-react-circulargauge",
+    "/@syncfusion/ej2-vue-circulargauge"
+  ],
+  "_resolved": "https://nexus.syncfusion.com/repository/ej2-hotfix-new/@syncfusion/ej2-circulargauge/-/ej2-circulargauge-16.41.8.tgz",
+  "_shasum": "89fa6eb6a9dff87231af607b43056b945515e600",
+  "_spec": "@syncfusion/ej2-circulargauge@*",
+  "_where": "/jenkins/workspace/elease-automation_release_21.1.1/packages/included",
+  "author": {
+    "name": "Syncfusion Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/syncfusion/ej2-javascript-ui-controls/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@syncfusion/ej2-base": "~22.2.5",
+    "@syncfusion/ej2-pdf-export": "~22.2.5",
+    "@syncfusion/ej2-svg-base": "~22.2.5"
+  },
+  "deprecated": false,
+  "description": "Essential JS 2 CircularGauge Components",
+  "devDependencies": {},
+  "es2015": "./dist/es6/ej2-circulargauge.es5.js",
+  "homepage": "https://www.syncfusion.com/javascript-ui-controls",
+  "keywords": [
+    "ej2",
+    "syncfusion",
+    "ej2-circulargauge",
+    "typescript",
+    "javascript",
+    "circular",
+    "gauge",
+    "arc-gauge",
+    "radial-gauge",
+    "semi-circular-gauge",
+    "quarter-circular-gauge",
+    "half-gauge",
+    "quarter-gauge",
+    "scale",
+    "range",
+    "multiple-ranges",
+    "axis",
+    "needle",
+    "pointer",
+    "multiple-pointers",
+    "ticks",
+    "labels",
+    "annotation",
+    "animation",
+    "template"
+  ],
+  "license": "SEE LICENSE IN license",
+  "main": "./dist/ej2-circulargauge.umd.min.js",
+  "module": "./index.js",
+  "name": "@syncfusion/ej2-circulargauge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syncfusion/ej2-javascript-ui-controls.git"
+  },
+  "typings": "index.d.ts",
+  "version": "22.2.5",
+  "sideEffects": false
+}

@@ -1,0 +1,78 @@
+{
+  "_from": "@syncfusion/ej2-notifications@*",
+  "_id": "@syncfusion/ej2-notifications@22.1.34",
+  "_inBundle": false,
+  "_integrity": "sha512-FYPXhyIqvX2C9sX+xaLdw3Cv7F9cbCmS1Cm+VmBwDFnEhkC9QpiTxytSiPmjjyEaGhIT7AGKSRdVeh27cUZTfw==",
+  "_location": "/@syncfusion/ej2-notifications",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@syncfusion/ej2-notifications@*",
+    "name": "@syncfusion/ej2-notifications",
+    "escapedName": "@syncfusion%2fej2-notifications",
+    "scope": "@syncfusion",
+    "rawSpec": "*",
+    "saveSpec": null,
+    "fetchSpec": "*"
+  },
+  "_requiredBy": [
+    "/",
+    "/@syncfusion/ej2",
+    "/@syncfusion/ej2-angular-notifications",
+    "/@syncfusion/ej2-gantt",
+    "/@syncfusion/ej2-grids",
+    "/@syncfusion/ej2-kanban",
+    "/@syncfusion/ej2-pdfviewer",
+    "/@syncfusion/ej2-react-notifications",
+    "/@syncfusion/ej2-vue-notifications"
+  ],
+  "_resolved": "https://nexus.syncfusion.com/repository/ej2-hotfix-new/@syncfusion/ej2-notifications/-/ej2-notifications-22.1.34.tgz",
+  "_shasum": "1f94de65a3df03fcbcad452a4da3c5857dc6caa8",
+  "_spec": "@syncfusion/ej2-notifications@*",
+  "_where": "/jenkins/workspace/elease-automation_release_21.1.1/packages/included",
+  "author": {
+    "name": "Syncfusion Inc."
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@syncfusion/ej2-base": "~22.2.5",
+    "@syncfusion/ej2-buttons": "~22.2.5",
+    "@syncfusion/ej2-popups": "~22.2.5"
+  },
+  "deprecated": false,
+  "description": "A package of Essential JS 2 notification components such as Toast and Badge which used to notify important information to end-users.",
+  "devDependencies": {},
+  "es2015": "./dist/es6/ej2-notifications.es5.js",
+  "keywords": [
+    "ej2",
+    "syncfusion",
+    "web-components",
+    "javascript",
+    "typescript",
+    "ej2-notification-components",
+    "ej2-badge",
+    "badges",
+    "ej2-toast",
+    "toast",
+    "toaster",
+    "notification",
+    "notification badge",
+    "circle badge",
+    "badge css",
+    "toast css",
+    "alart"
+  ],
+  "license": "SEE LICENSE IN license",
+  "main": "./dist/ej2-notifications.umd.min.js",
+  "module": "./index.js",
+  "name": "@syncfusion/ej2-notifications",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syncfusion/ej2-javascript-ui-controls/tree/master/controls/notifications"
+  },
+  "typings": "index.d.ts",
+  "version": "22.2.5",
+  "sideEffects": false,
+  "homepage": "https://www.syncfusion.com/javascript-ui-controls"
+}

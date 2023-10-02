@@ -1,0 +1,166 @@
+.control_pane {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    width: 100%;
+
+
+    justify-content: center;
+}
+
+.control_section {
+    margin-top: 5vw;
+    height: 100%;
+}
+
+#charts {
+    /* background-color: aqua; */
+    width: 100vw;
+}
+
+.container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fcfcfc;
+    gap: 2em;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: 260px;
+    background-color: #ffffff;
+    padding: 10px 30px 40px;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.drop_box {
+    margin: 10px 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.1em;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px dotted #a3a3a3;
+    border-radius: 5px;
+}
+
+.drop_box h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2e2e2e;
+    margin: 0;
+}
+
+.drop_box p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.btn-upload {
+    text-decoration: none;
+    background-color: #005af0;
+    color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 5pt;
+    border: none;
+    margin-top: 0.5em;
+    outline: none;
+    transition: all 0.5s;
+
+}
+
+.btn-upload:hover {
+    text-decoration: none;
+    scale: 1.2;
+    background-color: #003eaa;
+}
+
+/* modal-styles */
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.controllers {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    /* flex-wrap: wrap; */
+}
+
+.controller {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.checkBoxs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.checkBoxs input {
+    zoom: 1.7;
+    cursor: pointer
+}
+
+.checkbox {
+    display: flex;
+    gap: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .controllers {
+        flex-direction: column;
+    }
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 200px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: #007bff;
+    border-radius: 5px;
+    transition: width 0.2s ease-in-out;
+}
+
+.loader-text {
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+}

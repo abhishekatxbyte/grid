@@ -1,0 +1,83 @@
+{
+  "_from": "@syncfusion/ej2-lineargauge@*",
+  "_id": "@syncfusion/ej2-lineargauge@22.1.34",
+  "_inBundle": false,
+  "_integrity": "sha512-8vvbwl+ThUnF0VfBWedi1g9oZsVN8r8GOhvEcaImPo/4ESbfCuc9UVQQm69WgmuqI7H1e1SK4WY+z4DCc6e2tA==",
+  "_location": "/@syncfusion/ej2-lineargauge",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@syncfusion/ej2-lineargauge@*",
+    "name": "@syncfusion/ej2-lineargauge",
+    "escapedName": "@syncfusion%2fej2-lineargauge",
+    "scope": "@syncfusion",
+    "rawSpec": "*",
+    "saveSpec": null,
+    "fetchSpec": "*"
+  },
+  "_requiredBy": [
+    "/",
+    "/@syncfusion/ej2",
+    "/@syncfusion/ej2-angular-lineargauge",
+    "/@syncfusion/ej2-react-lineargauge",
+    "/@syncfusion/ej2-vue-lineargauge"
+  ],
+  "_resolved": "https://nexus.syncfusion.com/repository/ej2-hotfix-new/@syncfusion/ej2-lineargauge/-/ej2-lineargauge-22.1.34.tgz",
+  "_shasum": "17c5f91941058f9b851cf9c095a77a04dbfc834b",
+  "_spec": "@syncfusion/ej2-lineargauge@*",
+  "_where": "/jenkins/workspace/elease-automation_release_21.1.1/packages/included",
+  "author": {
+    "name": "Syncfusion Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/syncfusion/ej2-javascript-ui-controls/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@syncfusion/ej2-base": "~22.2.5",
+    "@syncfusion/ej2-pdf-export": "~22.2.5",
+    "@syncfusion/ej2-svg-base": "~22.2.5"
+  },
+  "deprecated": false,
+  "description": "Essential JS 2 LinearGauge Components",
+  "devDependencies": {},
+  "es2015": "./dist/es6/ej2-lineargauge.es5.js",
+  "homepage": "https://www.syncfusion.com/javascript-ui-controls",
+  "keywords": [
+    "ej2",
+    "syncfusion",
+    "ej2-lineargauge",
+    "web-components",
+    "linear-gauge",
+    "linear",
+    "gauge",
+    "vertical-orientation",
+    "horizontal-orientation",
+    "container",
+    "thermometer",
+    "rounded-rectangle",
+    "scale",
+    "range",
+    "multiple-ranges",
+    "axis",
+    "pointer",
+    "multiple-pointers",
+    "ticks",
+    "labels",
+    "annotation",
+    "animation",
+    "template"
+  ],
+  "license": "SEE LICENSE IN license",
+  "main": "./dist/ej2-lineargauge.umd.min.js",
+  "module": "./index.js",
+  "name": "@syncfusion/ej2-lineargauge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syncfusion/ej2-javascript-ui-controls.git"
+  },
+  "typings": "index.d.ts",
+  "version": "22.2.5",
+  "sideEffects": false
+}
