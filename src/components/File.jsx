@@ -51,15 +51,11 @@ const File = () => {
 
             // Usage example:
             const headers = extractHeaders(formattedData);
-            console.log(headers)
             dispatch(SET_HEADERS(headers))
 
-            console.log(`Data from file ${i + 1}:`, formattedData);
         }
     }
 
-    console.log(data)
-    console.log(dataArray)
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>

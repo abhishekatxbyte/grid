@@ -93,7 +93,6 @@ self.addEventListener('message', (event) => {
 
     if (type === 'FILTER_DATA') {
         const { data, baseHeader, secondHeader, selectedOperator, headerCondition, customInput } = payload;
-        console.log(data, baseHeader, secondHeader, selectedOperator, headerCondition, customInput)
         const filterData = (data, baseHeader, secondHeader, selectedOperator, headerCondition, customInput) => {
             if (headerCondition === 'HEADER_TO_HEADER') {
                 return data.filter(item => {
@@ -147,7 +146,6 @@ self.addEventListener('message', (event) => {
 
         // Call the filterData function with the provided parameters
         const filteredData = filterData(data, baseHeader, secondHeader, selectedOperator, headerCondition, customInput);
-        console.log(filteredData)
         // Post the filtered data back to the main thread
         self.postMessage({ type: 'FILTERED_DATA', payload: filteredData });
     }

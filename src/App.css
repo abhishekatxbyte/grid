@@ -1,3 +1,33 @@
 p {
     margin: 0 !important;
 }
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs>.ant-tabs-nav .ant-tabs-nav-wrap,
+:where(.css-dev-only-do-not-override-pr0fja).ant-tabs>div>.ant-tabs-nav .ant-tabs-nav-wrap {
+    position: relative;
+    display: flex;
+    flex: auto;
+    align-self: stretch;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translate(0);
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ant-table-tbody {
+    z-index: -9;
+
+}
+
+.ant-table-placeholder {
+    z-index: -9;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-divider-horizontal {
+    display: flex;
+    clear: both;
+    width: 100%;
+    min-width: 100%;
+    margin: 11px 0;
+}

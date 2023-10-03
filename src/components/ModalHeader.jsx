@@ -75,13 +75,11 @@ function MyVerticallyCenteredModal(props) {
     useEffect(() => {
         if (!worker) {
             try {
-                console.log("Creating a new worker");
                 const workerPath = new URL('./Worker/filterDataWorker.js', import.meta.url);
                 const newWorker = new Worker(workerPath);
 
                 newWorker.onmessage = (event) => {
                     const { type, payload } = event.data;
-                    console.log('Received message from worker:', type, payload);
                     if (type === 'FILTERED_DATA') {
                         setFilteredData(payload);
                     }
@@ -90,7 +88,6 @@ function MyVerticallyCenteredModal(props) {
                 setWorker(newWorker);
 
             } catch (error) {
-                console.error('Error creating worker:', error);
             }
         }
         return () => {
@@ -115,8 +112,6 @@ function MyVerticallyCenteredModal(props) {
         dispatch(SET_FILTERED_DATA(filteredData))
     }, [filteredData])
 
-    console.log(loading)
-    console.log(progress)
     return (
         <Modal
             {...props}
