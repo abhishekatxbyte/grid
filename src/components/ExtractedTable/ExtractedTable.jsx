@@ -230,7 +230,7 @@ const App = () => {
                                     Unpin Right
                                 </Button>
                             )}</>} >
-                            <PushpinOutlined />  <b style={{ cursor: "pointer" }}>Text Filter</b>
+                            <PushpinOutlined />  <b style={{ cursor: "pointer" }}>Pin Column</b>
                         </Popover>
                         <Divider size="small" />
                         <Popover placement="left" title={'Text Filter'} content={<>
@@ -247,7 +247,7 @@ const App = () => {
                                 ))}
                             </Select>
                         </>}>
-                            <FileTextOutlined />  <b style={{ cursor: "pointer" }}>Pin column</b>
+                            <FileTextOutlined />  <b style={{ cursor: "pointer" }}>Text Filter</b>
                         </Popover>
 
                     </>,
