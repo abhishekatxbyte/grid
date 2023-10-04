@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Column from './components/Column'
-import { Tabs } from 'antd';
+import { Button, Tabs } from 'antd';
 
 import File from './components/File'
 import { useDispatch, useSelector } from 'react-redux'
@@ -51,7 +51,8 @@ const TabsOfGrid = () => {
           return {
             label: fileName[i],
             key: i,
-            children: <Grid data={data} keyOfTab={key} />,
+
+            children: <>{filtereData.length > 0 && <Button style={{ float: 'right' }} onClick={() => dispatch(SET_FILTERED_DATA([]))}>clear filter</Button>} <Grid data={data} keyOfTab={key} /></>,
           };
         })}
         onChange={handleChange}

@@ -7,7 +7,7 @@ import {
 } from '@dnd-kit/sortable';
 import React, { useEffect, useState } from 'react';
 
-import { Table } from 'antd';
+import { Button, Table } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { EditableCell, Row } from './components/columns';
 
@@ -129,26 +129,29 @@ const Grid = ({ data, keyOfTab }) => {
     };
 
     return (
-        <DndContext modifiers={[restrictToVerticalAxis]} onDragEnd={onDragEnd}>
-            <SortableContext
-                items={dataSource.map((i) => i.key)}
-                strategy={verticalListSortingStrategy}
-            >
-                <Table
-                    components={{
-                        body: {
-                            row: Row,
-                            cell: EditableCell
-                        },
-                    }}
-                    scroll={scroll}
-                    loading={loading}
-                    rowKey="key"
-                    columns={columns}
-                    dataSource={dataSource}
-                />
-            </SortableContext>
-        </DndContext>
+        <div>
+            <DndContext modifiers={[restrictToVerticalAxis]} onDragEnd={onDragEnd}>
+                <SortableContext
+                    items={dataSource.map((i) => i.key)}
+                    strategy={verticalListSortingStrategy}
+                >
+                    <Table
+                        components={{
+                            body: {
+                                row: Row,
+                                cell: EditableCell
+                            },
+                        }}
+                        scroll={scroll}
+                        loading={loading}
+                        rowKey="key"
+                        columns={columns}
+                        dataSource={dataSource}
+                        pagination={{ position: ['topRight'] }}
+                    />
+                </SortableContext>
+            </DndContext>
+        </div>
     );
 
 };
