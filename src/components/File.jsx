@@ -1,11 +1,10 @@
 import * as XLSX from 'xlsx';
 import React, { useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { ADD_DATA, SET_HEADERS } from '../store/slice';
-import ModalHeader from './ModalHeader';
+import { SET_MULTIPLE_DATA, SET_HEADERS, SET_DATA, SET_FILTERED_DATA } from '../store/slice';
+// import ModalHeader from './ModalHeader';
 
 const File = () => {
-    const data = useSelector(state => state.data.data)
     const dataArray = useSelector(state => state.data.dataArray)
     const inputRef = useRef();
     const dispatch = useDispatch()
@@ -23,7 +22,7 @@ const File = () => {
 
             // Transform the array of arrays into an array of objects
             const headerRow = jsonData[0];
-            const formattedData = jsonData.slice(1).map(row => {
+            const formattedData = jsonData.slice(1).map((row, index) => {
 
                 const obj = {};
                 headerRow.forEach((key, index) => {
@@ -31,9 +30,10 @@ const File = () => {
                     obj.fileName = file.name.replace(/\.[^/.]+$/, "");
 
                 });
+                obj.key = index + 1
                 return obj;
             });
-            dispatch(ADD_DATA(formattedData))
+            dispatch(SET_MULTIPLE_DATA(formattedData))
             function extractHeaders(data) {
                 if (!data || data.length === 0) {
                     return [];
@@ -74,9 +74,9 @@ const File = () => {
                 </div>
 
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: "1em", width: '100%' }}>
+            {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: "1em", width: '100%' }}>
                 {dataArray.length !== 0 ? <ModalHeader /> : <></>}
-            </div>
+            </div> */}
         </div>
     )
 }

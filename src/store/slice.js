@@ -1,9 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    data: {},
+    data: [],
     dataArray: [],
     headers: [],
+    leftPinnedColumns: [],
+    setCurrentFileIndex: 0,
+    rightPinnedColumns: [],
     filteredData: []
 }
 
@@ -11,8 +14,10 @@ export const slice = createSlice({
     name: 'data',
     initialState,
     reducers: {
-        ADD_DATA: (state, action) => {
+        SET_DATA: (state, action) => {
             state.data = action.payload
+        },
+        SET_MULTIPLE_DATA: (state, action) => {
             state.dataArray = [...state.dataArray, action.payload]
         },
         SET_HEADERS(state, action) {
@@ -20,11 +25,20 @@ export const slice = createSlice({
         },
         SET_FILTERED_DATA(state, action) {
             state.filteredData = action.payload
+        },
+        SET_LEFT_PINNED_COLUMNS(state, action) {
+            state.leftPinnedColumns = action.payload
+        },
+        SET_RIGHT_PINNED_COLUMNS(state, action) {
+            state.rightPinnedColumns = action.payload
+        },
+        SET_CURRENT_FILE_INDEX(state, action) {
+            state.setCurrentFileIndex = action.payload
         }
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { ADD_DATA, SET_HEADERS, SET_FILTERED_DATA } = slice.actions
+export const { SET_DATA, SET_MULTIPLE_DATA, SET_HEADERS, SET_FILTERED_DATA, SET_LEFT_PINNED_COLUMNS, SET_RIGHT_PINNED_COLUMNS, SET_CURRENT_FILE_INDEX } = slice.actions
 
 export default slice.reducer
