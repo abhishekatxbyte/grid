@@ -4,7 +4,20 @@ import { Select, Space, Button } from 'antd';
 import { SET_DATA, SET_FILTERED_DATA } from '../../../../../store/slice';
 
 
-const App = ({ uniqueValuesArray, dataIndex, dataArray }) => {
+const FilterbyuniqItem = ({ dataIndex }) => {
+    const data = useSelector(state => state.data.dataArray);
+    const currentTabIndex = useSelector(state => state.data.setCurrentFileIndex)
+    const dataArray = data[currentTabIndex]
+    const uniqueValues = new Set();
+    const uniqueValuesArray = dataArray.reduce((acc, item) => {
+        const propertyValue = item[dataIndex];
+        if (!uniqueValues.has(propertyValue)) {
+            uniqueValues.add(propertyValue);
+            acc.push(propertyValue);
+        }
+        return acc;
+    }, []);
+
     const [selectedValues, setSelectedValues] = useState([]);
     const [filterObjects, setFilterObject] = useState([])
     const options = uniqueValuesArray.map((value) => ({
@@ -20,15 +33,11 @@ const App = ({ uniqueValuesArray, dataIndex, dataArray }) => {
         const filteredObjects = filterObjectsByProperty(dataArray, dataIndex, value);
         setFilterObject(filteredObjects)
     };
-
-    const handleReset = () => {
-        setSelectedValues([]); // Reset the selected values
-    };
     useEffect(() => {
         dispatch(SET_FILTERED_DATA(filterObjects))
     }, [filterObjects])
     return (
-        <Space
+        <div> <Space
             style={{
                 width: '100%',
             }}
@@ -45,29 +54,7 @@ const App = ({ uniqueValuesArray, dataIndex, dataArray }) => {
                 onChange={handleChange}
                 options={options}
             />
-            <Button onClick={handleReset}>Reset</Button> {/* Reset button */}
-        </Space>
-    );
-}
-
-const FilterbyuniqItem = ({ dataIndex }) => {
-    const data = useSelector(state => state.data.dataArray);
-    const currentTabIndex = useSelector(state => state.data.setCurrentFileIndex)
-    const dataArray = data[currentTabIndex]
-    const uniqueValues = new Set();
-    // Use reduce to collect unique values based on dataIndex property
-    const uniqueValuesArray = dataArray.reduce((acc, item) => {
-        const propertyValue = item[dataIndex];
-        if (!uniqueValues.has(propertyValue)) {
-            uniqueValues.add(propertyValue);
-            acc.push(propertyValue);
-        }
-        return acc;
-    }, []);
-
-
-    return (
-        <div><App uniqueValuesArray={uniqueValuesArray} dataIndex={dataIndex} dataArray={dataArray} /></div>
+        </Space></div>
     );
 }
 

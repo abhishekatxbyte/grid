@@ -29,17 +29,7 @@ const TabsOfGrid = () => {
     dispatch(SET_CURRENT_FILE_INDEX(key))
 
   }
-  useEffect(() => {
-    let dataToSend;
 
-    if (filtereData.length > 0) {
-      dataToSend = filtereData
-    } else {
-      dataToSend = dataArray[key]
-    }
-    dispatch(SET_DATA(dataToSend))
-
-  }, [key, filtereData])
   return (
     <div>
       <Tabs

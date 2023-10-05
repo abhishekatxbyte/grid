@@ -33,6 +33,7 @@ const File = () => {
                 obj.key = index + 1
                 return obj;
             });
+            dispatch(SET_DATA(formattedData))
             dispatch(SET_MULTIPLE_DATA(formattedData))
             function extractHeaders(data) {
                 if (!data || data.length === 0) {

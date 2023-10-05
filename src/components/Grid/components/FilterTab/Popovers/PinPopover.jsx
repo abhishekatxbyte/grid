@@ -32,7 +32,7 @@ const PinPopover = ({ dataIndex }) => {
         }
     };
     return (
-        <Popover placement="right" title={<p>Pin Column</p>} content={<>{!leftPinnedColumns.includes(dataIndex) && !rightPinnedColumns.includes(dataIndex) && (
+        <>{!leftPinnedColumns.includes(dataIndex) && !rightPinnedColumns.includes(dataIndex) && (
             <>
                 {/* Button to toggle left pin */}
                 <Button
@@ -80,9 +80,8 @@ const PinPopover = ({ dataIndex }) => {
                 >
                     Unpin Right
                 </Button>
-            )}</>} >
-            <PushpinOutlined />  <b style={{ cursor: "pointer" }}>Pin Column</b>
-        </Popover>
+            )}</>
+
     )
 }
 
