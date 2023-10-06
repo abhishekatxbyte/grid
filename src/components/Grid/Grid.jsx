@@ -7,7 +7,7 @@ import {
 } from '@dnd-kit/sortable';
 import React, { useState } from 'react';
 
-import { Divider, Input, Table } from 'antd';
+import { Divider, Input, Table, Tooltip } from 'antd';
 import { useSelector } from 'react-redux';
 import { EditableCell, Row } from './components/columns';
 import getColumnSearchProps from './components/getColumnSearchProps'

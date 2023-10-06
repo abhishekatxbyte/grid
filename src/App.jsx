@@ -56,8 +56,8 @@ function App() {
   const dataArray = useSelector(state => state.data.dataArray)
   return (
     <>
-      {dataArray.length > 0 && <TabsOfGrid />}
       <File />
+      {dataArray.length > 0 && <TabsOfGrid />}
     </>
   )
 }

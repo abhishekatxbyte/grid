@@ -47,6 +47,12 @@ function MyInput({ data, dataIndex, condition, isnumber, setDataSource, inputVal
                             return xValue !== customInputLowerCase;
                         case 'isContainsPhrase':
                             return typeof xValue === 'string' && xValue.includes(customInputLowerCase);
+                        case 'doesNotContainPhrase':
+                            return typeof xValue === 'string' && !xValue.includes(customInputLowerCase);
+                        case 'beginsWith':
+                            return typeof xValue === 'string' && xValue.startsWith(customInputLowerCase);
+                        case 'endsWith':
+                            return typeof xValue === 'string' && xValue.endsWith(customInputLowerCase);
                         default:
                             return true; // If condition is not specified, return all data
                     }
@@ -98,7 +104,10 @@ const FilterbyuniqItem = ({ dataIndex, setDataSource }) => {
             return [
                 { value: 'isEqual', label: 'is equal to' },
                 { value: 'isNotEqual', label: 'is not equal to' },
+                { value: 'beginsWith', label: 'beginsWith the phrase' },
+                { value: 'endsWith', label: 'endsWith the phrase' },
                 { value: 'isContainsPhrase', label: 'contain the phrase' },
+                { value: 'doesNotContainPhrase', label: 'does not contain the phrase' },
             ];
         } else if (typeof value === 'number') {
             isnumber = true
