@@ -1,6 +1,7 @@
 import * as XLSX from 'xlsx';
 import React, { useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+
 import { SET_MULTIPLE_DATA, SET_HEADERS, SET_DATA, SET_FILTERED_DATA, SET_FILE_NAME } from '../store/slice';
 // import ModalHeader from './ModalHeader';
 
@@ -42,24 +43,10 @@ const File = () => {
         }
     }
 
-
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div className="container">
-                <div className="card">
-                    <h3>Upload Files</h3>
-                    <div className="drop_box">
-                        <header>
-                            <h4>Select File(s) here</h4>
-                        </header>
-                        <p>Files Supported: csv,excel</p>
-                        <input multiple type="file" accept=".csv,.xlsx" id="fileID" style={{ display: "none" }} onChange={e => handleFile(e)} ref={inputRef} />
-                        <button className="btn-upload" onClick={() => inputRef.current.click()}>Choose File(s)</button>
 
-                    </div>
-                </div>
-
-            </div>
+            <input multiple type="file" accept=".csv,.xlsx" id="fileID" onChange={e => handleFile(e)} ref={inputRef} />
             {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: "1em", width: '100%' }}>
                 {dataArray.length !== 0 ? <ModalHeader /> : <></>}
             </div> */}
@@ -68,3 +55,4 @@ const File = () => {
 }
 
 export default File;
+
