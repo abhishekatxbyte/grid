@@ -15,7 +15,7 @@ const SortableRow = ({ record, children, ...props }) => {
         transform,
         transition,
         isDragging,
-    } = useSortable({ id: record.ID }); // Use 'ID' as the identifier
+    } = useSortable({ id: record.key }); // Use 'ID' as the identifier
 
     const style = {
         ...props.style,
@@ -25,7 +25,7 @@ const SortableRow = ({ record, children, ...props }) => {
     };
 
     return (
-        <SortableContext.Item {...props} {...attributes} id={record.ID}> // Use 'ID' as the id
+        <SortableContext.Item {...props} {...attributes} id={record.key}>
             <tr ref={setNodeRef} style={style}>
                 {React.Children.map(children, (child) => {
                     if (child && child.props && child.props.dataIndex === 'sort') {

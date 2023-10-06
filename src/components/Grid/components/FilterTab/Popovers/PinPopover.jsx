@@ -1,10 +1,12 @@
 import React from 'react'
-import { Button, Popover } from 'antd';
+import { Button, Divider, Popover } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { PushpinOutlined } from '@ant-design/icons'
 import { SET_LEFT_PINNED_COLUMNS, SET_RIGHT_PINNED_COLUMNS } from '../../../../../store/slice';
-const PinPopover = ({ dataIndex }) => {
+
+
+const Content = ({ dataIndex }) => {
     const dispatch = useDispatch()
     const leftPinnedColumns = useSelector(state => state.data.leftPinnedColumns)
     const rightPinnedColumns = useSelector(state => state.data.rightPinnedColumns)
@@ -31,56 +33,66 @@ const PinPopover = ({ dataIndex }) => {
             }
         }
     };
-    return (
-        <>{!leftPinnedColumns.includes(dataIndex) && !rightPinnedColumns.includes(dataIndex) && (
-            <>
-                {/* Button to toggle left pin */}
-                <Button
-                    type="link"
-                    size="small"
-                    onClick={() => {
-                        toggleColumnPinned(dataIndex, 'left');
-                    }}
-                >
-                    Pin Left
-                </Button>
+    return <>{!leftPinnedColumns.includes(dataIndex) && !rightPinnedColumns.includes(dataIndex) && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5em' }}>
+            {/* Button to toggle left pin */}
+            <Button
+                style={{ display: 'flex', alignItems: 'center' }}
+                size="small"
+                onClick={() => {
+                    toggleColumnPinned(dataIndex, 'left');
+                }}
+            >
+                <PushpinOutlined /> Left
+            </Button>
+            {/* Button to toggle right pin */}
+            <Button
+                style={{ display: 'flex', alignItems: 'center' }}
 
-                {/* Button to toggle right pin */}
-                <Button
-                    type="link"
-                    size="small"
-                    onClick={() => {
-                        toggleColumnPinned(dataIndex, 'right');
-                    }}
-                >
-                    Pin Right
-                </Button>
-            </>
+                size="small"
+                onClick={() => {
+                    toggleColumnPinned(dataIndex, 'right');
+                }}
+            >
+                <PushpinOutlined /> Right
+
+
+            </Button>
+        </div>
+    )}
+
+        {leftPinnedColumns.includes(dataIndex) && (
+            <Button
+
+                size="large"
+                onClick={() => {
+                    toggleColumnPinned(dataIndex, 'left');
+                }}
+            >
+                Unpin
+            </Button>
         )}
 
-            {leftPinnedColumns.includes(dataIndex) && (
-                <Button
-                    type="link"
-                    size="small"
-                    onClick={() => {
-                        toggleColumnPinned(dataIndex, 'left');
-                    }}
-                >
-                    Unpin Left
-                </Button>
-            )}
+        {rightPinnedColumns.includes(dataIndex) && (
+            <Button
 
-            {rightPinnedColumns.includes(dataIndex) && (
-                <Button
-                    type="link"
-                    size="small"
-                    onClick={() => {
-                        toggleColumnPinned(dataIndex, 'right');
-                    }}
-                >
-                    Unpin Right
-                </Button>
-            )}</>
+                size="large"
+                onClick={() => {
+                    toggleColumnPinned(dataIndex, 'right');
+                }}
+            >
+                Unpin
+            </Button>
+        )}</>
+}
+    ;
+
+const PinPopover = ({ dataIndex }) => {
+
+    return (
+        <Popover content={<Content dataIndex={dataIndex} />}>
+            <Button style={{ display: 'flex', alignItems: 'center' }} type="secondary"><PushpinOutlined /></Button>
+        </Popover>
 
     )
 }

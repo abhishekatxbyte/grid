@@ -7,7 +7,8 @@ const initialState = {
     leftPinnedColumns: [],
     setCurrentFileIndex: 0,
     rightPinnedColumns: [],
-    filteredData: []
+    filteredData: [],
+    fileNames: []
 }
 
 export const slice = createSlice({
@@ -19,6 +20,9 @@ export const slice = createSlice({
         },
         SET_MULTIPLE_DATA: (state, action) => {
             state.dataArray = [...state.dataArray, action.payload]
+        },
+        SET_FILE_NAME: (state, action) => {
+            state.fileNames = [...state.fileNames, action.payload]
         },
         SET_HEADERS(state, action) {
             state.headers = action.payload
@@ -39,6 +43,6 @@ export const slice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { SET_DATA, SET_MULTIPLE_DATA, SET_HEADERS, SET_FILTERED_DATA, SET_LEFT_PINNED_COLUMNS, SET_RIGHT_PINNED_COLUMNS, SET_CURRENT_FILE_INDEX } = slice.actions
+export const { SET_DATA, SET_MULTIPLE_DATA, SET_FILE_NAME, SET_HEADERS, SET_FILTERED_DATA, SET_LEFT_PINNED_COLUMNS, SET_RIGHT_PINNED_COLUMNS, SET_CURRENT_FILE_INDEX } = slice.actions
 
 export default slice.reducer

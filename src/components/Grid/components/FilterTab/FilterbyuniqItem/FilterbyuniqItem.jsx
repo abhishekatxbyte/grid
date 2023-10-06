@@ -1,60 +1,143 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Select, Space, Button } from 'antd';
-import { SET_DATA, SET_FILTERED_DATA } from '../../../../../store/slice';
+import { useSelector } from 'react-redux';
+import { Divider, Input, Select } from 'antd';
 
+function MyInput({ data, dataIndex, condition, isnumber, setDataSource, inputValue, setInputValue }) {
 
-const FilterbyuniqItem = ({ dataIndex }) => {
-    const data = useSelector(state => state.data.dataArray);
-    const currentTabIndex = useSelector(state => state.data.setCurrentFileIndex)
-    const dataArray = data[currentTabIndex]
-    const uniqueValues = new Set();
-    const uniqueValuesArray = dataArray.reduce((acc, item) => {
-        const propertyValue = item[dataIndex];
-        if (!uniqueValues.has(propertyValue)) {
-            uniqueValues.add(propertyValue);
-            acc.push(propertyValue);
-        }
-        return acc;
-    }, []);
-
-    const [selectedValues, setSelectedValues] = useState([]);
-    const [filterObjects, setFilterObject] = useState([])
-    const options = uniqueValuesArray.map((value) => ({
-        label: value,
-        value: value,
-    }));
-    const dispatch = useDispatch()
-    const handleChange = (value) => {
-        setSelectedValues(value); // Update the selected values in state
-        function filterObjectsByProperty(dataArray, propertyName, propertyValues) {
-            return dataArray.filter(item => propertyValues.includes(item[propertyName]));
-        }
-        const filteredObjects = filterObjectsByProperty(dataArray, dataIndex, value);
-        setFilterObject(filteredObjects)
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
     };
     useEffect(() => {
-        dispatch(SET_FILTERED_DATA(filterObjects))
-    }, [filterObjects])
+        function filterData(data, dataIndex, condition, customInput, isnumber) {
+            if (isnumber) {
+                const filteredData = data.filter(item => {
+                    console.log('hey')
+                    const xValue = item[dataIndex];
+
+                    switch (condition) {
+                        case 'isEqual':
+                            return xValue == customInput;
+                        case 'isNotEqual':
+                            return xValue != customInput;
+                        case 'isLessThan':
+                            return xValue < customInput;
+                        case 'isGreaterThan':
+                            return xValue > customInput;
+                        case 'isGreaterThanOrEqual':
+                            return xValue >= customInput;
+                        case 'isLessThanOrEqual':
+                            return xValue <= customInput;
+                        default:
+                            return true; // If condition is not specified, return all data
+                    }
+                });
+                return filteredData;
+            } else if (!isnumber) {
+                const filteredData = data.filter(item => {
+                    console.log(item[dataIndex])
+                    let xValue = item[dataIndex]
+                    if (typeof xValue === 'string') {
+                        xValue = xValue.toLowerCase();
+                    }
+                    const customInputLowerCase = customInput.toLowerCase();
+                    switch (condition) {
+                        case 'isEqual':
+                            return xValue === customInputLowerCase;
+                        case 'isNotEqual':
+                            return xValue !== customInputLowerCase;
+                        case 'isContainsPhrase':
+                            return typeof xValue === 'string' && xValue.includes(customInputLowerCase);
+                        default:
+                            return true; // If condition is not specified, return all data
+                    }
+                });
+                return filteredData;
+            } else {
+                return data
+            }
+        }
+        const filteredData = filterData(data, dataIndex, condition, inputValue, isnumber)
+        if (filteredData.length > 0) {
+            setDataSource(filteredData)
+        } else {
+            setDataSource(data)
+
+        }
+
+    }, [inputValue])
     return (
-        <div> <Space
-            style={{
-                width: '100%',
-            }}
-            direction="vertical"
-        >
-            <Select
-                mode="multiple"
+        <div>
+            <Input
                 allowClear
-                style={{
-                    width: '100%',
-                }}
-                placeholder="Please select"
-                value={selectedValues}
-                onChange={handleChange}
-                options={options}
+                value={inputValue}
+                onChange={handleInputChange}
+                placeholder="Write your input"
             />
-        </Space></div>
+        </div>
+    );
+}
+
+const FilterbyuniqItem = ({ dataIndex, setDataSource }) => {
+    const [inputValue, setInputValue] = useState('');
+
+    const [condition, setCondition] = useState(null);
+    const data = useSelector(state => state.data.data);
+    let isnumber = false
+    data.map((obj) => {
+        const value = obj[dataIndex]
+        if (typeof value === 'string') {
+        } else {
+            isnumber = true
+
+        }
+    })
+    const [checkboxes] = data.map((obj) => {
+        const value = obj[dataIndex];
+        if (typeof value === 'string') {
+            isnumber = false
+            return [
+                { value: 'isEqual', label: 'is equal to' },
+                { value: 'isNotEqual', label: 'is not equal to' },
+                { value: 'isContainsPhrase', label: 'contain the phrase' },
+            ];
+        } else if (typeof value === 'number') {
+            isnumber = true
+            return [
+                { value: 'isEqual', label: 'is equal to' },
+                { value: 'isNotEqual', label: 'is not equal to' },
+                { value: 'isLessThan', label: 'less than' },
+                { value: 'isGreaterThan', label: 'greater than' },
+                { value: 'isGreaterThanOrEqual', label: 'greater than or equal' },
+                { value: 'isLessThanOrEqual', label: 'less than or equal' },
+            ];
+        } else {
+            return []; // Empty array if the data type is neither string nor number
+        }
+    });
+    const handleOperatorChange = (value) => {
+        setInputValue('')
+        setCondition(value);
+    };
+
+    return (
+        <div style={{ display: 'flex' }}>
+            <Select
+                showSearch
+                style={{
+                    width: 400,
+                }}
+                value={condition}
+                placeholder="Search to Select"
+                onChange={handleOperatorChange}
+                allowClear
+                options={checkboxes.map(option => ({
+                    value: option.value,
+                    label: option.label,
+                }))}
+            />
+            <Divider type="vertical" />
+            <MyInput data={data} dataIndex={dataIndex} inputValue={inputValue} setInputValue={setInputValue} condition={condition} isnumber={isnumber} setDataSource={setDataSource} />
+        </div>
     );
 }
 

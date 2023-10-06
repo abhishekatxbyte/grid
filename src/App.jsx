@@ -19,6 +19,7 @@ const TabsOfGrid = () => {
     return data[0].fileName
   })
   const data = useSelector(state => state.data.data)
+  const fileNames = useSelector(state => state.data.fileNames)
   const filtereData = useSelector(state => state.data.filteredData)
 
   console.log(dataArray)
@@ -39,7 +40,7 @@ const TabsOfGrid = () => {
         size={'large'}
         items={dataArray.map((_, i) => {
           return {
-            label: fileName[i],
+            label: fileNames[i],
             key: i,
 
             children: <>{filtereData.length > 0 && <Button style={{ float: 'right' }} onClick={() => dispatch(SET_FILTERED_DATA([]))}>clear filter</Button>} <Grid data={data} keyOfTab={key} /></>,
@@ -55,8 +56,8 @@ function App() {
   const dataArray = useSelector(state => state.data.dataArray)
   return (
     <>
-      <File />
       {dataArray.length > 0 && <TabsOfGrid />}
+      <File />
     </>
   )
 }

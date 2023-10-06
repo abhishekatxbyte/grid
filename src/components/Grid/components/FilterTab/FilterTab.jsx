@@ -4,13 +4,11 @@ import { Divider } from 'antd';
 import React from 'react'
 import './Popover.css'
 import PinPopover from './Popovers/PinPopover';
-import FilterbyuniqItem from './FilterbyuniqItem/FilterbyuniqItem';
 const FilterTab = ({ dataIndex }) => {
     return (
         <>
             <PinPopover dataIndex={dataIndex} />
             <Divider size="small" />
-            <FilterbyuniqItem dataIndex={dataIndex} />
         </>
     )
 }

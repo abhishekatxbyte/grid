@@ -1,7 +1,7 @@
 import * as XLSX from 'xlsx';
 import React, { useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { SET_MULTIPLE_DATA, SET_HEADERS, SET_DATA, SET_FILTERED_DATA } from '../store/slice';
+import { SET_MULTIPLE_DATA, SET_HEADERS, SET_DATA, SET_FILTERED_DATA, SET_FILE_NAME } from '../store/slice';
 // import ModalHeader from './ModalHeader';
 
 const File = () => {
@@ -23,36 +23,21 @@ const File = () => {
             // Transform the array of arrays into an array of objects
             const headerRow = jsonData[0];
             const formattedData = jsonData.slice(1).map((row, index) => {
-
                 const obj = {};
                 headerRow.forEach((key, index) => {
-                    obj[key] = row[index];
-                    obj.fileName = file.name.replace(/\.[^/.]+$/, "");
-
+                    const value = row[index];
+                    // Only add the property if it has a non-empty value
+                    if (value !== "" && value !== undefined) {
+                        obj[key] = value;
+                    }
                 });
-                obj.key = index + 1
+                obj.key = index + 1;
                 return obj;
             });
+            dispatch(SET_FILE_NAME(file.name.replace(/\.[^/.]+$/, "")))
             dispatch(SET_DATA(formattedData))
             dispatch(SET_MULTIPLE_DATA(formattedData))
-            function extractHeaders(data) {
-                if (!data || data.length === 0) {
-                    return [];
-                }
 
-                // Get the keys (headers) from the first object in the array
-                const firstObject = data[0];
-                const headers = Object.keys(firstObject);
-
-                // Remove the "fileName" property from the headers
-                const filteredHeaders = headers.filter(header => header !== 'fileName');
-
-                return filteredHeaders;
-            }
-
-            // Usage example:
-            const headers = extractHeaders(formattedData);
-            dispatch(SET_HEADERS(headers))
 
         }
     }
