@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Grid from './components/Grid/Grid'
 import { SET_CURRENT_FILE_INDEX, SET_DATA, SET_FILTERED_DATA } from './store/slice'
+import PivotTable from './components/PivotTable/PivotTable'
 const TabsOfGrid = () => {
   const dataArray = useSelector(state => state.data.dataArray)
   const [key, setKey] = useState(0)
@@ -52,12 +53,31 @@ const TabsOfGrid = () => {
     </div>
   );
 };
+
 function App() {
   const dataArray = useSelector(state => state.data.dataArray)
+  const data = useSelector(state => state.data.data)
+  const items = [
+    {
+      key: '1',
+      label: 'GRID',
+      children: <TabsOfGrid />,
+    },
+    {
+      key: '2',
+      label: 'PIVOT TABLE',
+      children: <PivotTable data={data} />,
+    }
+  ];
+  const MainTabs = ({ data }) => <Tabs defaultActiveKey="1" items={items} />;
+
   return (
     <>
+
       <File />
-      {dataArray.length > 0 && <TabsOfGrid />}
+
+      {dataArray.length > 0 && <MainTabs />}
+
     </>
   )
 }
