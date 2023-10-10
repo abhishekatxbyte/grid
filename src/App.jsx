@@ -37,7 +37,7 @@ const TabsOfGrid = () => {
       <Tabs
         defaultActiveKey="1"
         type="card"
-        style={{ userSelect: "none" }}
+        style={{ userSelect: "none", top: '50px' }}
         size={'large'}
         items={dataArray.map((_, i) => {
           return {
@@ -57,28 +57,37 @@ const TabsOfGrid = () => {
 function App() {
   const dataArray = useSelector(state => state.data.dataArray)
   const data = useSelector(state => state.data.data)
+  const [key, setKey] = useState('1')
+  const handleChange = (key) => {
+    setKey(key)
+  }
   const items = [
     {
       key: '1',
       label: 'GRID',
-      children: <TabsOfGrid />,
     },
     {
       key: '2',
       label: 'PIVOT TABLE',
-      children: <PivotTable data={data} />,
-    }
+    },
   ];
-  const MainTabs = ({ data }) => <Tabs defaultActiveKey="1" items={items} />;
+
 
   return (
-    <>
-
+    <div style={{ position: 'relative' }}>
       <File />
+      {dataArray.length > 0 && <div>
 
-      {dataArray.length > 0 && <MainTabs />}
+        {
+          key == 1 ? < TabsOfGrid /> : <PivotTable data={data} />
+        }
+      </div>}
 
-    </>
+      <div style={{ position: 'absolute', right: '2%', top: '0%' }}>
+        {dataArray.length > 0 && <Tabs onChange={handleChange} defaultActiveKey="1" items={items} />}
+      </div>
+
+    </div >
   )
 }
 

@@ -129,11 +129,12 @@ const FilterbyuniqItem = ({ dataIndex, setDataSource }) => {
     };
 
     return (
-        <div style={{ display: 'flex' }}>
+        <div>
             <Select
                 showSearch
                 style={{
-                    width: 400,
+                    minWidth: 200,
+
                 }}
                 value={condition}
                 placeholder="Search to Select"
@@ -144,7 +145,7 @@ const FilterbyuniqItem = ({ dataIndex, setDataSource }) => {
                     label: option.label,
                 }))}
             />
-            <Divider type="vertical" />
+            <Divider />
             <MyInput data={data} dataIndex={dataIndex} inputValue={inputValue} setInputValue={setInputValue} condition={condition} isnumber={isnumber} setDataSource={setDataSource} />
         </div>
     );

@@ -8,11 +8,9 @@ import { useState } from "react";
 function PivotTable({ data }) {
     const PlotlyRenderers = createPlotlyRenderers(Plot);
     const [state, setState] = useState([]);
-    console.log(data)
-
     return (
         <div
-            style={{ width: '100vw' }}
+            style={{ width: '100vw', position: 'absolute', top: '50px' }}
         >
 
             <PivotTableUI
